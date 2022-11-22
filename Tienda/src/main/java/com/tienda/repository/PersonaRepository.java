@@ -14,5 +14,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface PersonaRepository extends CrudRepository<Persona,Long>{ //java generics y hace todas las consultas en la base de datos
-    
+    Persona findByNombre(String nombre);
 }
